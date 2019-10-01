@@ -1,5 +1,6 @@
 library(plotly)
 library(htmltools)
+library(usethis)
 #> Warning: package 'htmltools' was built under R version 3.4.4
 library(d3r)
 library(sunburstR)
@@ -15,7 +16,7 @@ tree <- d3_nest(dat, value_cols = "size")
 sb1 <- sunburst(tree, width="100%", height=400)
 sb1
 
-setwd('D:/11614361/11614361/Rebecca')
+#setwd('D:/11614361/11614361/Rebecca')
 
 p <- plot_ly(
   labels = c("Industry", "Broadacare_cropping (29%)", "Dairy (4%)", "Extensive_livestock (14%)","Fisheries (9%)","Forestry (8%)",
